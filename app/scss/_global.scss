@@ -7,7 +7,7 @@ body {
 	scroll-behavior: smooth;
 	font-family: 'Montserrat';
 	font-weight: 400;
-	color: #000;
+	color: #fff;
 	line-height: 1.5;
 	font-size: 16px;
  }
@@ -22,7 +22,15 @@ body > * {
 	margin-top: auto;/*sticky footer*/
 }
 button{
+	max-width: 100%;
+	color: #fff;
+	border: none;
 	cursor: pointer;
+	text-align: center;
+	font-weight: 600;
+	font-size: 16px;
+	background-color: #FF8C20;
+	font-weight: 600;
 }
 .container{
 	max-width: 1230px;

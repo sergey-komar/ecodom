@@ -1,0 +1,89 @@
+.heading-slider {
+    min-height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+.heading-slider__item {
+    margin-top: 150px;
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.heading-slider__item-title,
+.heading-slider__item-subtitle {
+    font-size: 8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+.heading-slider__item-subtitle{
+    margin-bottom: 30px;
+}
+.heading-slider__item-text {
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.heading-slider__btn {
+    width: 250px;
+    height: 50px;
+    line-height: 40px;
+    border-radius: 6px;
+}
+.heading-slider__btn:hover{
+    background-color: #9f4e02;
+}
+.heading .slick-dots{
+    padding: 5px;
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    transform: translateY(-15rem);
+    background-color: rgba(74, 70, 69, .5);
+    border-radius: 20px;
+}
+.heading .slick-dots li{
+    display: flex;
+    align-items: center;
+}
+.heading .slick-dots li button{
+    font-size: 0;
+    padding: 0;
+    border: none;
+    width: 24px;
+    height: 24px;
+    background-color: #B19E98;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.heading .slick-dots li.slick-active button{
+   background-color: #FF8C20;
+}
+
+.heading .slick-prev,
+.heading .slick-next{
+    font-size: 0;
+    padding: 0;
+    border: none;
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .4s ease-in;
+    background-color: transparent;
+}
+.heading .slick-prev{
+    left: 0;
+    background-image: url('../images/home/arrow-leftslider.svg');
+}
+.heading .slick-next{
+    right: 0;
+    background-image: url('../images/home/arrow-rightslider.svg');
+}

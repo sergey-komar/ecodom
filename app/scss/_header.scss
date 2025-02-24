@@ -1,0 +1,111 @@
+.header{
+    padding: 20px 0;
+    background-color: #14262D;
+}
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-box__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header-box__logo {
+    display: flex;
+    gap: 10px;
+}
+.header-box__logo img{
+    min-width: 50px;
+}
+.header-box__logo {
+    font-weight: 600;
+    font-size: 4rem;
+}
+.header-box__text {
+    width: 100px;
+}
+.header-box__btn {
+    width: 170px;
+    border-radius: 20px;
+}
+.header-box__btn:hover{
+    background-color: #9f4e02;
+}
+.menu__list {
+    display: flex;
+    gap: 50px;
+}
+.menu__list li{
+    position: relative; 
+}
+.menu__list li a{
+    font-size: 18px;
+    font-weight: 600;
+}
+.menu__list li::before{
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+    border-style: solid;
+    border-width: 6px 6px 6px 6px;
+    border-color:  transparent transparent transparent #fff;
+    transition: all .4s ease-in;
+}
+.menu__list li:hover::before{
+    transform: rotate(90deg);
+    transition: all .4s ease-in;
+}
+.menu__list li:last-child::before{
+    display: none;
+}
+.menu__list li a:hover{
+    color: #FF8E1A;
+}
+.menu__list li:hover::before{
+    border-color:  transparent transparent transparent #FF8E1A;
+    transition: all .4s ease-in;
+}
+.sub-menu {
+    position: absolute;
+    width: 270px; 
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    left: -15px;
+    background-color: #06161C;
+    z-index: 2;
+}
+ul.sub-menu{
+    padding: 25px;
+}
+.sub-menu li{
+    margin-bottom: 15px;
+}
+.sub-menu li:last-child{
+    margin-bottom: 0;
+}
+.sub-menu li::before{
+    display: none;
+}
+.sub-menu{
+    display: none;
+}
+.menu__list li:hover .sub-menu{
+    display: block;
+}
+.header-box__social {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header-box__phone {
+    font-size: 18px;
+    font-weight: 600;
+}
+.header-box__phone:hover{
+    color: #FF8E1A;
+}
