@@ -14,7 +14,7 @@
 .heading-slider__item-title,
 .heading-slider__item-subtitle {
     font-size: 5rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.2;
     text-transform: uppercase;
 }
@@ -97,6 +97,10 @@
 .project-home{
     padding: 5.5rem 0;
     background-color: #173946;
+}
+//Показать крайние слайдеры
+.project-slider .slick-list{
+    padding:0 5% 0 5%;
 }
 .project-slider{
     margin-bottom: 5.5rem;
@@ -234,6 +238,7 @@
     right: 0%;
     background-image: url('../images/home/arrow-rightslider.svg');
 }
+//Показать крайние слайдеры
 .built-slider .slick-list{
     padding:0 5% 0 5%;
 }
@@ -249,6 +254,10 @@
 .ready {
     padding-bottom: 5.5rem;
     background-color: #173946;
+}
+//Показать крайние слайдеры
+.ready-slider .slick-list{
+    padding:0 5% 0 5%;
 }
 .ready-slider__item {
     width: 105rem;

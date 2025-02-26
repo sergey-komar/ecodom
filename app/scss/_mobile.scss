@@ -5,29 +5,325 @@
     }
 }
 
-@media(max-width: 968px){
-    .heading-slider__item{
-        margin-right: 0;
-        padding: 110px 0;  
+@media(max-width: 1250px){
+    .geodesy__item:nth-child(1){
+        min-width: unset;
+    }
+    .geodesy__item{
+        min-width: unset;
+        width: calc(100% / 5);
+    }
+    .geodesy__item-text,
+    .stages__item-text{
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    .geodesy__item:nth-child(2){
+        transform: translateX(-45px);
+    }
+    .geodesy__item:nth-child(3){
+        transform: translateX(-85px);
+    }
+    .geodesy__item:nth-child(4){
+        transform: translateX(-125px);
+    }
+    .geodesy__item:nth-child(5){
+        transform: translateX(-165px);
+    }
+    .geodesy__item:nth-child(1)::before{
+        width: 40px;
+        background-size: contain;
+        top: 18px;
+    }
+    .built-slider__item{
+        width: 470px;
+    }
+    .ready-slider__item{
+        width: 100rem;
     }
 }
 
 
-@media(max-width: 750px){
-    .footer-block{
+
+@media(max-width: 1100px){
+    .director-box__item-number{
+        font-size: 40px;
+    }
+    .director-box__item-text{
+        font-size: 18px;
+    }
+    .stages,
+    .geodesy{
         flex-wrap: wrap;
+    }
+    .stages__item,
+    .stages__item:first-child,
+    .geodesy__item{
+        width: 100%;
+    }
+    .geodesy__item:nth-child(1)::before{
+        display: none;
+    }
+    .stages__item:nth-child(1),
+    .stages__item:nth-child(2),
+    .stages__item:nth-child(3),
+    .stages__item:nth-child(4),
+    .geodesy__item:nth-child(1),
+    .geodesy__item:nth-child(2),
+    .geodesy__item:nth-child(3),
+    .geodesy__item:nth-child(4),
+    .geodesy__item:nth-child(5){
+        margin-bottom: 15px;
+        transform: translateX(0);
+        border-radius: 10px;
+    }
+    .stages__item:nth-child(1){
+        background-image: none !important;
+    }
+    .stages__item:nth-child(1) .stages__item-text{
+        font-size: 24px;
+    }
+    .stages__item:nth-child(2),
+    .stages__item:nth-child(4),
+    .geodesy__item:nth-child(2),
+    .geodesy__item:nth-child(4){
+        background-color: #476874;
+    }
+    .geodesy__item:nth-child(1),
+    .geodesy__item:nth-child(3),
+    .geodesy__item:nth-child(5),
+    .stages__item:nth-child(3){
+        background-color: #14262D;
+    }
+    .form-block,
+    .form-block__fields{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .form-block__img{
+        display: none;
+    }
+    .form-block__text,
+    .form-block__title,
+    .form-block__left,
+    .form-block__right{
+        width: 100%;
+        text-align: center;
+    }
+    .form-block__right-btn{
+        margin: 0 auto;
+    }
+    .form{
+        padding: 40px 0;
+    }
+    .built-slider__item{
+        width: 420px;
+    }
+    .ready-slider__item{
+        width: 100%;
+    }
+    .ready-slider .slick-list{
+        padding:0;
+    }
+    .stages__item:nth-child(3) .stages__item-text,
+    .stages__item:nth-child(4) .stages__item-text,
+    .geodesy__item-text{
+        width: 100%;
+        text-align: center;
+    }
+    .stages{
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+@media(max-width: 968px){
+    .heading-slider__item{
+        margin-right: 0;
+        padding: 130px 0;  
+    }
+    .director-block{
+        margin-bottom: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .director-block__text{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .director-block__inner{
+        order: 1;
+    }
+    .director-box__item-number{
+        font-size: 20px;
+    }
+    .director-box__item-text{
+        font-size: 16px;
+    }
+    .services-block__item,
+    .advantages-block__item{
+        width: calc(100% / 2 - 40px);
+    }
+    .services-block__item-img img,
+    .director-block__content{
+        width: 100%;
+    }
+    .director-block__content{
+        margin-bottom: 20px;
+        order: 1;
+    }
+    .services-block__item-text{
+        font-size: 18px;
+    }
+    .services-block__item-text{
+        margin-top: -63px;
+    }
+    .building{
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+    .building__title p,
+    .building__title{
+        margin-bottom: 20px;
+        width: 100%;
+        background-color: transparent;
+        text-align: center;
+    }
+    .building-box{
+        border-radius: 20px;
+    }
+    .ready-slider__item{
+        flex-wrap: wrap;
+    }
+    .ready-slider__left,
+    .ready-slider__right{
+        width: 100%;
+    }
+    .ready-slider__right{
+        padding: 20px;
+    }
+}
+
+
+
+
+@media(max-width: 768px){
+    .footer-block,
+    .contacts-block{
+        flex-wrap: wrap;
+    }
+    .director-box{
+        margin-top: -20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .director-box__item{
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        background-color: #14262D;
+        border-radius: 10px !important;
+    }
+    .director-block__inner{
+        width: 80%;
+    }
+    .building-box{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .map iframe {
+        height: 400px;
+    }
+    .contacts-block__left,
+    .contacts-block__right{
+        width: 100%;
+    }
+    .contacts-block{
+        padding: 20px 10px;
+    }
+    .contacts-block__left-address,
+    .contacts-block__left-time,
+    .contacts-block__right-mail{
+        margin-left: 30px;
+        font-size: 16px;
+    }
+    .contacts-block__right-phone{
+        margin-bottom: 10px;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    .contacts-block__right-mail{
+        margin-left: 40px;
+    }
+    .contacts-block__right-phone::before{
+        top: 0;
+    }
+    .contacts-block__right-mail::before{
+        left: -30px;
     }
 }
 
 
 
 @media(max-width: 650px){
+    .main{
+        margin-top: 40px;
+    }
+    .title,
+    .building__title p,
+    .form-block__title,
+    .director-constraction .title{
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .services-home,
+    .project-home,
+    .advantages,
+    .built{
+        padding: 40px 0;
+    }
+    .services-block{
+        gap: 20px;
+    }
+    .advantages-block{
+        gap: 30px;
+    }
     .heading-slider__item-title,
     .heading-slider__item-subtitle{
         font-size: 27px;
      }
+     .project-slider__item-title,
+     .ready-slider__right-title,
+     .ready-slider__right-price{
+        font-size: 20px;
+     }
+     .footer-block__item-phone,
+     .director-block__content-item{
+        font-size: 18px;
+    }
+    .geodesy__item-text, 
+    .stages__item-text,
+    .advantages-block__item-text,
+    .form-block__text,
+    .built-slider__item-text{
+        font-size: 16px;
+    }
+    .services-block__item,
+    .advantages-block__item,
+    .form-block__left-input,
+    .form-block__right-btn,
+    .built-slider__item,
+    .built-slider__item-img img,
+    .project-slider__item-img img {
+        width: 100%;
+    }
     .heading-slider__item-text{
-        margin-bottom: 70px;
+        margin-bottom: 40px;
         font-size: 20px;
      }
     .heading .slick-dots li button{
@@ -49,19 +345,20 @@
         height: 100%;
         left: 0;
         top: 0;
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(0, 0, 0, .5);
     }
     .heading-slider__btn{
-        width: 100%;
+        width: 60%;
     }
     .heading .slick-dots{
         transform: translateY(-50px);
     }
     .heading-slider__item-subtitle{
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
     .heading-slider__inner{
         display: flex;
+        flex-wrap: wrap;
         gap: 10px;
     }
     .footer{
@@ -77,10 +374,88 @@
         margin-bottom: 5px;
         font-size: 18px;
     }
-    .footer-block__item-phone{
-        font-size: 18px;
-    }
     .footer-block{
         margin-bottom: 30px;
+    }
+    .director{
+        padding: 40px 0 20px 0;
+    }
+    .services-block__item-text{
+        padding: 15px;
+    }
+    .services-block__item-text {
+        margin-top: -55px;
+    }
+    .project-slider .slick-list{
+        padding: 0;
+    }
+    .project-slider__item{
+        width: 100%;
+    }
+    .stages__item,
+    .geodesy__item{
+        padding: 0 10px;
+        height: 60px;
+    }
+    .building-box__item-img img{
+        width: 65px;
+        height: auto;
+    }
+    .project-slider__characteristics{
+        flex-wrap: wrap;
+    }
+    .project-slider__characteristics-item{
+        width: 100%;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .building__title{
+        margin-bottom: 0;
+    }
+    .advantages-block__item-img img{
+        max-width: 40px;
+    }
+    .advantages-block__item:last-child .advantages-block__item-img img{
+        max-width: 35px;
+    }
+    .form-block{
+        gap: 10px;
+    }
+    .form-block__left-input:last-child{
+        margin-bottom: 0;
+    }
+    .built-slider .slick-list{
+        padding: 0;
+    }
+    .ready-slider .slick-prev,
+     .ready-slider .slick-next{
+        top: 20%;
+    }
+    .built{
+        padding-bottom: 0;
+    }
+    .built-slider .slick-prev, 
+    .built-slider .slick-next{
+        top: 42%;
+    }
+    .project-slider .slick-prev,
+    .project-slider .slick-next{
+        top: 25%;
+    }
+    .director-block__content-item{
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    .director-constraction .director-block{
+        gap: 10px;
+    }
+    .heading-constraction 
+    .heading-slider__item-text,
+    .heading-slider__item-text--one{
+        font-size: 20px;
+        text-align: left;
+    }
+    .header-fixed{
+        padding: 10px;
     }
 }

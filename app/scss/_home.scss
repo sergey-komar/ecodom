@@ -1,6 +1,6 @@
 .director {
     margin-top: -30px;
-    padding: 20px 0 50px 0;
+    padding: 70px 0 50px 0;
     background-color: #173946;
 }
 .director-block {
@@ -10,14 +10,23 @@
     align-items: center;
     gap: 45px;
 }
+.director-block__inner{
+    width: 30%;  
+}
 .director-block__img {
-    width: 30%;
+    border: 2px solid #FF8C20;
+    background-color: #14262D;
+    border-radius: 40px;
+    border-top-left-radius: 0;
+}
+.director-block__img img{
+    margin: -50px auto 0 auto;
 }
 .director-block__img-name {
     padding: 7px;
     width: 210px;
-    background-color: #12232A; 
-    transform: translate(40px, -75px); 
+    background-color: #14262D; 
+    transform: translate(20px, -75px); 
 }
 .director-block__img-name span{
     color: #FF8C20;
@@ -32,11 +41,11 @@
     justify-content: space-between;
 }
 .director-box__item {
-    padding: 12px 0;
+    padding: 15px 0;
     width: calc(100% / 4 );
     font-weight: 600;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     text-align: center;
     background-position: center;  
 }
@@ -111,6 +120,7 @@
 .services-block__item-img img{
     border-radius: 30px;
     height: 100%;
+    object-fit: cover;
 }
 .services-block__item-text {
     position: relative;
@@ -185,7 +195,7 @@
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     font-size: 2.2rem;
     font-weight: 500;
@@ -208,6 +218,10 @@
     z-index: 1;
     transform: translateX(-165px);
 }
+.stages__item:nth-child(3) .stages__item-text,
+.stages__item:nth-child(4) .stages__item-text{
+    width: 130px;
+}
 
 .geodesy {
     display: flex;
@@ -222,7 +236,7 @@
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     font-size: 2rem;
     font-weight: 500;
@@ -257,6 +271,9 @@
     z-index: 1;
     transform: translateX(-240px);
 }
+.geodesy__item-text{
+    width: 130px;
+}
 
 
 
@@ -278,10 +295,10 @@
     gap: 20px;
 }
 .advantages-block__item-img img{
-   max-width: 85px;
+   max-width: 75px;
 }
 .advantages-block__item:last-child .advantages-block__item-img img{
-    max-width: 75px;
+    max-width: 65px;
 }
 .advantages-block__item-text {
     font-size: 2.2rem;

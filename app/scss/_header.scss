@@ -1,6 +1,17 @@
 .header{
+    background-color: #14262D;
+}
+.header-fixed{
     padding: 33px 0;
     background-color: #14262D;
+    width: 100%;
+    transition: all .4s ease-in;
+    position: fixed;
+    z-index: 6;
+}
+
+.header-fixed.header-bg{
+    box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.4);
 }
 .header-box {
     display: flex;
