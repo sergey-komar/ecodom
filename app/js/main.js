@@ -18,6 +18,28 @@ $(function () {
          
         ]
       });
+
+      $('.project-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '60px',
+      });
+
+      $('.built-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+       
+      });
+
+      $('.ready-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '60px',
+      });
+
+
 })
 
 
@@ -29,6 +51,19 @@ window.addEventListener('DOMContentLoaded', () => {
       this.classList.toggle("nav-icon--active");
       menu.classList.toggle("nav--active");
     });
+
+
+     // Маска для Инпута
+     var element = document.getElementById('input-mask');
+     
+     var maskOptions = {
+         mask: '+{7}(000)000-00-00'
+     };
+ 
+     if(element){
+         var mask = IMask(element, maskOptions);
+     }
+    
 
     
 })
