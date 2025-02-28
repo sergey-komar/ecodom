@@ -9,6 +9,12 @@
     .geodesy__item:nth-child(1){
         min-width: unset;
     }
+    .stages__item,
+    .stages__item:first-child{
+        width: calc(100% / 4);
+        height: 75px;
+       
+    }
     .geodesy__item{
         min-width: unset;
         width: calc(100% / 5);
@@ -34,6 +40,15 @@
         width: 40px;
         background-size: contain;
         top: 18px;
+    }
+    .stages__item:nth-child(2){
+        transform: translateX(-75px);
+    }
+    .stages__item:nth-child(3){
+        transform: translateX(-185px);
+    }
+    .stages__item:nth-child(4){
+        transform: translateX(-295px);
     }
     .built-slider__item{
         width: 470px;
@@ -293,8 +308,7 @@
     .advantages-block{
         gap: 30px;
     }
-    .heading-slider__item-title,
-    .heading-slider__item-subtitle{
+    .heading-slider__item-title{
         font-size: 27px;
      }
      .project-slider__item-title,
@@ -321,6 +335,11 @@
     .built-slider__item-img img,
     .project-slider__item-img img {
         width: 100%;
+    }
+    .heading-slider__item-title,
+    .heading-constraction .heading-slider__item-title{
+        width: 100%;
+        text-align: left;
     }
     .heading-slider__item-text{
         margin-bottom: 40px;
@@ -457,5 +476,10 @@
     }
     .header-fixed{
         padding: 10px;
+    }
+    .project-slider__item-img img,
+    .built-slider__item-img img,
+    .ready-slider__left img{
+        height: 100%;
     }
 }

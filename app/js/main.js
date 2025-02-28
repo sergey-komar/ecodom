@@ -43,6 +43,13 @@ $(function () {
         ]
       });
 
+      $('.project-slider-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
+      });
+
 
 
       $('.built-slider').slick({
@@ -62,11 +69,21 @@ $(function () {
        
       });
 
-
-
       $('.ready-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+      });
+
+      $('.ready-slider-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
+      });
+
+
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
       });
 
 
