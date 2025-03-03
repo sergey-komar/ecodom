@@ -38,8 +38,8 @@
     background-color: #9f4e02;
 }
 .heading .slick-dots{
-    padding: 5px;
-    width: 100px;
+    padding: 5px 10px;
+    width: max-content;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -108,7 +108,13 @@
 }
 .project-slider-slider .slick-dots,
 .ready-slider-slider .slick-dots{
-    transform: translateY(-25px);
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+    padding: 5px 10px;
+    background-color: rgba(74, 70, 69, 0.5);
+    border-radius: 20px;
+    transform: translateY(-35px);
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -116,6 +122,7 @@
 }
 .project-slider-slider .slick-dots li button,
 .ready-slider-slider .slick-dots li button{
+    position: relative;
     font-size: 0;
     padding: 0;
     border: none;
@@ -124,11 +131,14 @@
     border-radius: 50%;
     background-color: #FF8C20;
     cursor: pointer;
+    z-index: 4;
 }
 .project-slider{
     margin-bottom: 5.5rem;
 }
 .project-slider__item {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     padding-bottom: 20px;
     width: 320px;
@@ -136,11 +146,12 @@
     background-color: #14262D;
 }
 .project-slider__item-img img{
-    width: 320px;
+    position: relative;
     height: 220px;
     border-radius: 30px;
     object-fit: cover;
     cursor: pointer;
+    z-index: 1;
 }
 .project-slider__item-title {
     padding-left: 20px;
@@ -174,6 +185,7 @@
 }
 .project-slider__item-btn {
     margin-left: 20px;
+    margin-top: auto;
     width: 170px;
     height: 40px;
     line-height: 40px;
@@ -206,19 +218,6 @@
     right: 0%;
     background-image: url('../images/home/arrow-rightslider.svg');
 }
-// .project-slider .slick-slide{
-//     opacity: .4;
-// }
-// .project-slider .slick-slide.slick-active{
-//     opacity: 1;
-// }
-// .project-slider-slider .slick-slide{
-//     opacity: 1;
-// }
-// .project-slider-slider .slick-slide.slick-active{
-//     opacity: 1;
-// }
-
 
 
 
@@ -240,7 +239,7 @@
 }
 .built-slider__item-text {
     display: inline-block;
-    padding: 3px 10px;
+    padding: 3px 12px;
     background-color: rgba(187, 199, 187, .7);
     font-size: 18px;
     color: #14262D;
@@ -301,19 +300,22 @@
 }
 .ready-slider__item {
     width: 105rem;
+    height: 363px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 40px;
     background-color: #13262D;
+    border-bottom-left-radius: 40px;
 }
 .ready-slider__left{
     width: 50%;
+    height: 365px;
 }
 .ready-slider__left img{
     width: 525px;
-    height: 350px;
-    border-radius: 30px;
+    height: 365px;
+    border-radius: 20px;
     width: 100%;
     cursor: pointer;
     cursor: pointer;
@@ -327,6 +329,9 @@
     font-size: 2.2rem;
     line-height: 1.2;
     font-weight: 600;
+}
+.ready-slider-slider .slick-dots{
+    transform: translateY(-35px);
 }
 .ready-slider__right-subtitle {
     margin-bottom: 5px;
@@ -363,7 +368,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    top: 50%;
+    top: 53%;
     z-index: 2;
     transform: translateY(-50%);
     background-repeat: no-repeat;
@@ -379,12 +384,24 @@
     right: 0%;
     background-image: url('../images/home/arrow-rightslider.svg');
 }
-//  .ready-slider .slick-slide{
-//      opacity: .4;
-//  }
-//  .ready-slider .slick-slide.slick-active{
-//      opacity: 1;
-//  }
+
+
+
+// одинаковая высота слайдов
+.slick-track{
+    display: flex;
+}
+.slick-slide{
+    height:auto;
+    flex:0 0 auto;
+}
+.slick-slide > div,
+.project-slider__item,
+.project-slider__wrapper{
+    height: 100%;
+}
+// одинаковая высота слайдов
+
 
 
 

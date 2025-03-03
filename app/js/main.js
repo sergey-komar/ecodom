@@ -78,15 +78,16 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        dots: true
+        dots: true,
+       
       });
-
+    
 
       Fancybox.bind("[data-fancybox]", {
         // Your custom options
       });
 
-
+     
 })
 
 
@@ -125,14 +126,26 @@ window.addEventListener('DOMContentLoaded', () => {
 
       
      // Маска для Инпута
-     var element = document.getElementById('input-mask');
+     var element1 = document.getElementById('input-mask1');
+     var element2 = document.getElementById('input-mask2');
+     var element3 = document.getElementById('input-mask3');
+     var element4 = document.getElementById('input-mask4');
      
      var maskOptions = {
          mask: '+{7}(000)000-00-00'
      };
  
-     if(element){
-         var mask = IMask(element, maskOptions);
+     if(element1){
+         var mask1 = IMask(element1, maskOptions);
+     }
+     if(element2){
+         var mask2 = IMask(element2, maskOptions);
+     }
+     if(element3){
+         var mask3 = IMask(element3, maskOptions);
+     }
+     if(element4){
+         var mask4 = IMask(element4, maskOptions);
      }
     
 
@@ -147,5 +160,179 @@ window.addEventListener('DOMContentLoaded', () => {
          }
        });
      }
+
+
+     const builthousesHidden = document.querySelector('.builthouses-box--hidden');
+     const builthousesBtn = document.querySelector('.builthouses__button');
+
+     if(builthousesBtn && builthousesHidden){
+      builthousesBtn.addEventListener('click', () => {
+        builthousesHidden.classList.add('builthouses-open');
+        builthousesBtn.classList.add('builthouses-btn-none')
+       })
+     }
+
+     const saleHidden = document.querySelector('.sale-box--hidden');
+     const saleBtn = document.querySelector('.sale__button');
+
+     if(saleBtn && saleHidden){
+      saleBtn.addEventListener('click', function () {
+        saleHidden.classList.add('sale-open');
+        $('.ready-slider-slider').slick('setPosition');
+        saleBtn.classList.add('builthouses-btn-none')
+       })
+     }
+   
+
+     const modalBtnHeading = document.querySelectorAll('.btn-click-heading');
+     const modalHeading = document.querySelector('.modal-heading');
+     const modalCloseHeading = document.querySelector('.modal__close-heading');
+
+
+         modalBtnHeading.forEach(btn =>{
+             btn.addEventListener('click', ()=>{
+                 modalHeading.classList.add('show');
+                 modalHeading.classList.remove('hide');
+                 document.body.style.overflow = 'hidden';
+             })
+         });
+
+         modalCloseHeading.addEventListener('click', ()=>{
+                 modalHeading.classList.add('hide');
+                 modalHeading.classList.remove('show');
+                 document.body.style.overflow = '';
+         });
+
+         modalHeading.addEventListener('click', (e)=>{
+             if(e.target == modalHeading){
+                 modalHeading.classList.add('hide');
+                 modalHeading.classList.remove('show');
+                 document.body.style.overflow = '';
+             }
+         });
+
+         document.addEventListener('keydown', (e)=>{
+             if(e.code == 'Escape' && modalHeading.classList.contains('show')){
+                 modalHeading.classList.add('hide');
+                 modalHeading.classList.remove('show');
+                 document.body.style.overflow = '';
+             }
+         })
+
+        
+     const modalBtnProject = document.querySelectorAll('.btn-click-project');
+     const modalProject = document.querySelector('.modal-project');
+     const modalCloseBtnProject = document.querySelector('.modal__close-project');
+
+
+         modalBtnProject.forEach(btn =>{
+             btn.addEventListener('click', ()=>{
+                 modalProject.classList.add('show');
+                 modalProject.classList.remove('hide');
+                 document.body.style.overflow = 'hidden';
+             })
+         });
+
+         modalCloseBtnProject.addEventListener('click', ()=>{
+                 modalProject.classList.add('hide');
+                 modalProject.classList.remove('show');
+                 document.body.style.overflow = '';
+         });
+
+         modalProject.addEventListener('click', (e)=>{
+             if(e.target == modalProject){
+                 modalProject.classList.add('hide');
+                 modalProject.classList.remove('show');
+                 document.body.style.overflow = '';
+             }
+         });
+
+         document.addEventListener('keydown', (e)=>{
+             if(e.code == 'Escape' && modalProject.classList.contains('show')){
+                 modalProject.classList.add('hide');
+                 modalProject.classList.remove('show');
+                 document.body.style.overflow = '';
+             }
+         })
+
+        
+     const modalBtnReady = document.querySelectorAll('.btn-click-ready');
+     const modalReady = document.querySelector('.modal-ready');
+     const modalCloseBtnReady = document.querySelector('.modal__close-ready');
+
+
+         modalBtnReady.forEach(btn =>{
+             btn.addEventListener('click', ()=>{
+                 modalReady.classList.add('show');
+                 modalReady.classList.remove('hide');
+                 document.body.style.overflow = 'hidden';
+             })
+         });
+
+         modalCloseBtnReady.addEventListener('click', ()=>{
+                 modalReady.classList.add('hide');
+                 modalReady.classList.remove('show');
+                 document.body.style.overflow = '';
+         });
+
+         modalReady.addEventListener('click', (e)=>{
+             if(e.target == modalReady){
+                 modalReady.classList.add('hide');
+                 modalReady.classList.remove('show');
+                 document.body.style.overflow = '';
+             }
+         });
+
+         document.addEventListener('keydown', (e)=>{
+             if(e.code == 'Escape' && modalReady.classList.contains('show')){
+                 modalReady.classList.add('hide');
+                 modalReady.classList.remove('show');
+                 document.body.style.overflow = '';
+             }
+         })
+
+        
+     const modalBtn = document.querySelectorAll('.btn-click');
+     const modal = document.querySelector('.modal');
+     const modalCloseBtn = document.querySelector('.modal__close');
+
+
+         modalBtn.forEach(btn =>{
+             btn.addEventListener('click', ()=>{
+                 modal.classList.add('show');
+                 modal.classList.remove('hide');
+                 document.body.style.overflow = 'hidden';
+             })
+         });
+
+         modalCloseBtn.addEventListener('click', ()=>{
+                 modal.classList.add('hide');
+                 modal.classList.remove('show');
+                 document.body.style.overflow = '';
+         });
+
+         modal.addEventListener('click', (e)=>{
+             if(e.target == modal){
+                 modal.classList.add('hide');
+                 modal.classList.remove('show');
+                 document.body.style.overflow = '';
+             }
+         });
+
+         document.addEventListener('keydown', (e)=>{
+             if(e.code == 'Escape' && modal.classList.contains('show')){
+                 modal.classList.add('hide');
+                 modal.classList.remove('show');
+                 document.body.style.overflow = '';
+             }
+         })
+
+        
+          new WOW().init();
+
+
+
+        
+      
     
 })

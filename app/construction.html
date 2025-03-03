@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Экодом</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -144,7 +145,7 @@
 
       <section class="director director-constraction">
         <div class="container">
-            <div class="director__title title">Наши достижения</div>
+            <div class="director__title title animate__backInLeft animate__animated wow">Наши достижения</div>
           <div class="director-block">
             <div class="director-block__content">
               <div class="director-block__content-item">
@@ -180,7 +181,7 @@
 
       <section class="project-home">
         <div class="container">
-          <h3 class="project-home__title title">Типовые проекты</h3>
+          <h3 class="project-home__title title animate__backInLeft animate__animated wow">Типовые проекты</h3>
 
           <div class="project-slider">
             <div class="project-slider__wrapper">
@@ -418,7 +419,7 @@
     
       <section class="advantages">
         <div class="container">
-          <h3 class="advantages__title title">Наши преимущества</h3>
+          <h3 class="advantages__title title animate__backInLeft animate__animated wow">Наши преимущества</h3>
           <div class="advantages-block">
             <div class="advantages-block__item">
               <div class="advantages-block__item-img">
@@ -469,7 +470,7 @@
           <div class="form-block">
             <div class="form-block__title">Остались вопросы?</div>
             <div class="form-block__img">
-              <img src="./images/home/man.png" alt="img">
+              <img src="./images/home/man-img.svg" alt="img">
             </div>
             <div class="form-block__text">заполните форму, <br>и мы свяжемся с вами в ближайшее время</div>
             <div class="form-block__fields">
@@ -487,7 +488,7 @@
 
       <section class="built">
         <div class="container">
-          <h3 class="built__title title">Построенные дома</h3>
+          <h3 class="built__title title animate__backInLeft animate__animated wow">Построенные дома</h3>
           <div class="built-slider">
             <div class="built-slider__wrapper">
               <div class="built-slider__item">
@@ -519,13 +520,22 @@
 
       <section class="ready">
         <div class="container">
-          <h3 class="ready__title title">Готовые дома</h3>
+          <h3 class="ready__title title animate__backInLeft animate__animated wow">Готовые дома</h3>
           <div class="ready-slider">
             <div class="ready-slider__wrapper">
               <div class="ready-slider__item">
-                <div class="ready-slider__left">
-                  <img src="./images/home/built-img.png" alt="img">
+                <div class="ready-slider__left ">
+                  <div class="ready-slider-slider">
+                      <div class="ready-slider-slider__img">
+                      <img data-fancybox="gallery" src="./images/home/built-img.png" alt="img">
+                    </div> 
+                   
+                    <div class="ready-slider-slider__img">
+                      <img data-fancybox="gallery" src="./images/home/built-img.png" alt="img">
+                    </div> 
+                  </div>
                 </div>
+               
                 <div class="ready-slider__right">
                   <div class="ready-slider__right-title">Дом 120м на участке 8 сот.</div>
                   <div class="ready-slider__right-subtitle">Характеристики:</div>
@@ -555,9 +565,17 @@
             </div>
             <div class="ready-slider__wrapper">
               <div class="ready-slider__item">
-                <div class="ready-slider__left">
-                  <img src="./images/home/built-img.png" alt="img">
+                <div class="ready-slider__left ">
+                  <div class="ready-slider-slider">
+                    <div class="ready-slider-slider__img">
+                      <img data-fancybox="gallery" src="./images/home/built-img.png" alt="img">
+                    </div>
+                    <div class="ready-slider-slider__img">
+                      <img data-fancybox="gallery" src="./images/home/built-img.png" alt="img">
+                    </div>
+                  </div>
                 </div>
+               
                 <div class="ready-slider__right">
                   <div class="ready-slider__right-title">Дом 120м на участке 8 сот.</div>
                   <div class="ready-slider__right-subtitle">Характеристики:</div>
@@ -587,9 +605,17 @@
             </div>
             <div class="ready-slider__wrapper">
               <div class="ready-slider__item">
-                <div class="ready-slider__left">
-                  <img src="./images/home/built-img.png" alt="img">
+                <div class="ready-slider__left ">
+                  <div class="ready-slider-slider">
+                    <div class="ready-slider-slider__img">
+                      <img data-fancybox="gallery" src="./images/home/built-img.png" alt="img">
+                    </div>
+                    <div class="ready-slider-slider__img">
+                      <img data-fancybox="gallery" src="./images/home/built-img.png" alt="img">
+                    </div>
+                  </div>
                 </div>
+               
                 <div class="ready-slider__right">
                   <div class="ready-slider__right-title">Дом 120м на участке 8 сот.</div>
                   <div class="ready-slider__right-subtitle">Характеристики:</div>
@@ -617,9 +643,10 @@
                 </div>
               </div>
             </div>
+           
           </div>
         </div>
-      </section>
+      </section> 
 
 
     </main>
@@ -688,10 +715,15 @@
     </footer>
   
     <div class="btnUp">&uarr;</div> 
-
+    
     <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+  
     <script src="js/main.min.js"></script>
+
+    
 </body>
 
 </html>

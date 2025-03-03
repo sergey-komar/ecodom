@@ -13,6 +13,7 @@ body {
  }
 html{
 	font-size: 10px;
+	overflow-y: scroll;
 }
 body > * {
 	flex-shrink: 0;
@@ -79,6 +80,7 @@ button:hover{
     transition: opacity .5s;
     pointer-events: none;
 	border-radius: 50%;
+	z-index: 5;
   }
   
   .btnUp-visible{

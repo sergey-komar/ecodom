@@ -20,7 +20,7 @@
     margin-bottom: 40px;
 }
 .director-constraction .title{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: 3.2rem;
 }
 .director-block__content{
@@ -34,4 +34,103 @@
     background-color: #14262D;
     border-radius: 20px;
     border-top-left-radius: 0;
+}
+
+
+
+
+//builthouses
+.builthouses,
+.sale{
+    margin-top: -30px;
+    padding: 5rem 0 6.5rem 0;
+    background-color: #173946;
+}
+.builthouses-box{
+    margin-bottom: 4.5rem;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.builthouses-box--hidden,
+.sale-box--hidden{
+    display: none;
+}
+.built-slider__item.built-slider__item--builthouses{
+    width: calc(100% / 2 - 20px);
+}
+.built-slider__item--builthouses .built-slider__item-img img{
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
+}
+.built-slider__item--builthouses .built-slider__item-img{
+    height: 100%;
+}
+.builthouses__button,
+.sale__button{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: transparent;
+    text-align: center;
+}
+.builthouses__button::before,
+.sale__button::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 15px;
+    top: 10px;
+    left: -33px;
+    background: url('../images/home/arrow-down.svg') no-repeat;
+}
+.builthouses-open{
+    display: flex;
+}
+.sale-open{
+    display: block;
+}
+.builthouses__button.builthouses-btn-none,
+.sale__button.builthouses-btn-none{
+    display: none;
+}
+.sale-box .ready-slider__item{
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+//foundation
+.foundation{
+    margin-top: -30px;
+    padding: 5rem 0 6rem 0;
+    background-color: #173946;
+}
+.foundation-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-end;
+}
+.foundation-box__img {
+    width: 30%;
+}
+.foundation-box__content {
+    width: 70%;
+}
+.foundation-box__content-text {
+    line-height: 1.8;
+}
+.foundation__text {
+    line-height: 1.8;
+}
+.heading.heading--services .heading-slider__item-text{
+    width: 425px;
 }
